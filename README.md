@@ -1,2 +1,2 @@
-# illustration portfolio website
-under development
+# peachyxin
+Illustration portfolio website. Under development. Created with React.
