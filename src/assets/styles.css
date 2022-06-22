@@ -1,0 +1,27 @@
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px 12px 24px;
+}
+
+.nav {
+  padding: 0px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: right;
+}
+.nav__item {
+  display: inline;
+  padding: 6px;
+}
+.nav__item a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
