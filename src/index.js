@@ -7,6 +7,7 @@ import Page from './Components/Page';
 import Commissions from './pages/Commissions'
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
+import Terms from './pages/Terms';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -18,6 +19,7 @@ root.render(
         <Route path="/commissions" element={<Commissions />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
+        <Route path="/tos" element={<Terms />} />
       </Route>
     </Routes>
   </HashRouter>
