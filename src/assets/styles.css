@@ -1,5 +1,23 @@
 body {
+  --random-color: black;
   margin: 0px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: var(--random-color);
+}
+
+h1 {
+  font-weight: 900;
+}
+h1:hover {
+  color: var(--random-color);
 }
 
 header {
@@ -19,9 +37,6 @@ header {
 .nav__item {
   display: inline;
   padding: 6px;
-}
-.nav__item a {
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

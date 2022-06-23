@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 const links = [
@@ -36,16 +36,33 @@ const Nav = () => {
       <li
         key={link.page}
         className={`nav__item`}
+        onMouseOver={(e) => {
+          setRandomColor(e.currentTarget);
+        }}
       >
         {content}
       </li>
     )
   });
-  console.log(renderLinks);
+
+  const colors = ['#fc7b72', '#fcd372', '#66b2de'];
+
+  const setRandomColor = (element) => {
+    let color = Math.floor(Math.random() * 3);
+    document.body.style.setProperty('--random-color', colors[color]);
+  };
+
   return (
-    <ul className="nav">
-      {renderLinks}
-    </ul>
+    <header>
+      <h1 onMouseOver={(e) => {
+        setRandomColor(e.currentTarget);
+      }}>
+        <Link to="/">peachyxin</Link>
+      </h1>
+      <ul className="nav">
+        {renderLinks}
+      </ul>
+    </header>
   );
 };
 

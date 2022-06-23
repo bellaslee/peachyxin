@@ -1,7 +1,29 @@
 $base-spacing: 12px;
+$pink: #fc7b72;
+$yellow: #fcd372;
+$blue: #66b2de;
 
 body {
+  --random-color: black;
   margin: 0px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: var(--random-color);
+  }
+}
+
+h1 {
+  font-weight: 900;
+  &:hover {
+    color: var(--random-color);
+  }
 }
 
 header {
@@ -16,15 +38,10 @@ header {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  // justify-self: right;
   justify-content: right;
 
   &__item {
     display: inline;
     padding: $base-spacing * 0.5;
-
-    a {
-      text-decoration: none;
-    }
   }
 }
