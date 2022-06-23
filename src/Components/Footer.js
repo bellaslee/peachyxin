@@ -1,0 +1,16 @@
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+
+const Footer = () => {
+  return (
+    <section className='footer'>
+      <a href="http://instagram.com/peachyxin" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+      <p><FontAwesomeIcon icon={faEnvelope} /> peachyxin(at)gmail(dot)com</p>
+      <p>&copy; 2022 Bella Lee</p>
+    </section>
+  )
+};
+
+export default Footer;

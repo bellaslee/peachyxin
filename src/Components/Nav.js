@@ -1,4 +1,7 @@
-import React, { useRef } from 'react';
+import '../assets/css/nav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const links = [
@@ -29,16 +32,24 @@ const links = [
 ];
 
 const Nav = () => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  useEffect(() => {
+    if (isNavExpanded) document.body.classList.add('stop-scrolling');
+    else document.body.classList.remove('stop-scrolling');
+  }, [isNavExpanded])
+
   const renderLinks = links.map((link) => {
     const content = link.url ? <a href={link.url} target="_blank" rel="noreferrer">{link.page}</a> : <Link to={link.route}>{link.page}</Link>;
 
     return (
       <li
         key={link.page}
-        className={`nav__item`}
+        className={`nav__menu__item`}
         onMouseOver={(e) => {
           setRandomColor(e.currentTarget);
         }}
+        onClick={() => setIsNavExpanded(false)}
       >
         {content}
       </li>
@@ -53,16 +64,23 @@ const Nav = () => {
   };
 
   return (
-    <header>
+    <nav className="nav">
       <h1 onMouseOver={(e) => {
         setRandomColor(e.currentTarget);
       }}>
         <Link to="/">peachyxin</Link>
       </h1>
-      <ul className="nav">
+      <button
+        onClick={() => {
+          setIsNavExpanded(!isNavExpanded);
+        }}
+        className="nav__hamburger">
+        <FontAwesomeIcon icon={faBars} size="2x" />
+      </button>
+      <ul className={`nav__menu ${isNavExpanded ? '' : 'nav__menu--hidden'}`}>
         {renderLinks}
       </ul>
-    </header>
+    </nav>
   );
 };
 
