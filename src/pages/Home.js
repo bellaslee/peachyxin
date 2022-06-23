@@ -18,7 +18,7 @@ const Home = () => {
           <div className='section__column section__column--center-items'>
             <h2>prints</h2>
             <p>external link to Inprnt</p>
-            <a href="https://www.inprnt.com/profile/peachyxin/" target="_blank" rel="noreferrer"><button className='button button--blue'>Go to page</button></a>
+            <a href="https://www.inprnt.com/gallery/peachyxin/" target="_blank" rel="noreferrer"><button className='button button--blue'>Go to page</button></a>
           </div>
           <div className='section__column section__column--center-items'>
             <h2>ko-fi</h2>

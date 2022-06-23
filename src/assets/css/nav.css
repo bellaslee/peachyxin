@@ -12,7 +12,6 @@
 .nav__hamburger {
   border: none;
   background-color: white;
-  cursor: pointer;
   position: absolute;
   top: 47%;
   right: 12px;

@@ -4,8 +4,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 14px;
 }
-
-.stop-scrolling {
+body.stop-scrolling {
   height: 100%;
   overflow: hidden;
 }
@@ -16,6 +15,10 @@ a {
 }
 a:hover {
   color: var(--random-color);
+}
+
+button {
+  cursor: pointer;
 }
 
 h1 {
@@ -49,6 +52,7 @@ h3 {
 }
 .section--first {
   min-height: 85vh;
+  animation: fadeInUp 0.5s ease-in-out;
 }
 .section__columns {
   display: flex;
@@ -85,6 +89,7 @@ h3 {
   border: 1px black solid;
   border-radius: 2.4px;
   padding: 6px;
+  transition: 0.1s;
 }
 .button--pink:hover {
   background-color: #fc7b72;
@@ -124,6 +129,16 @@ em.bold {
   }
   .section__column {
     width: 75%;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 

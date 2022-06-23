@@ -95,7 +95,6 @@ const Commissions = () => {
             <li>Description of character's personality or link to their wiki page.</li>
             <li>Any other specific details to be included in the image (e.g. pose, special accessories, etc.)</li>
             <li>It would be helpful if you could show me your favorite pieces of mine so I can try to emulate the style and overall vibe!</li>
-            <li>Budget (if applicable, for example, if you are requesting a complex piece).</li>
             <li>Paypal email address for invoicing.</li>
           </ol>
         </p>

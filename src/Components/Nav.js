@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import anime from 'animejs';
 
 const links = [
   {
@@ -27,7 +28,7 @@ const links = [
   },
   {
     page: "inprnt",
-    url: "https://www.inprnt.com/profile/peachyxin/"
+    url: "https://www.inprnt.com/gallery/peachyxin/"
   }
 ];
 
@@ -61,6 +62,10 @@ const Nav = () => {
   const setRandomColor = (element) => {
     let color = Math.floor(Math.random() * 3);
     document.body.style.setProperty('--random-color', colors[color]);
+  };
+
+  const bloom = () => {
+
   };
 
   return (
