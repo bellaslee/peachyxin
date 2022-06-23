@@ -2,19 +2,20 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding: 12px 24px 12px 24px;
-  height: 5%;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .nav h1 {
   margin-left: 12px;
+  margin-top: 24px;
 }
 .nav__hamburger {
   border: none;
   background-color: white;
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  right: 24px;
+  top: 47%;
+  right: 12px;
   transform: translateY(-50%);
   display: none;
 }
@@ -39,12 +40,12 @@
   }
   .nav__menu {
     position: fixed;
-    top: 48px;
+    top: 60px;
     flex-direction: column;
     text-align: center;
     width: 100%;
     background-color: white;
-    height: calc(100vh - 48px);
+    height: calc(100vh - 60px);
     transition: 0.3s;
   }
   .nav__menu--hidden {

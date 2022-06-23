@@ -26,6 +26,8 @@ a {
 
 h1 {
   font-weight: 900;
+  font-size: $base-spacing * 3;
+
   &:hover {
     color: var(--random-color);
   }
@@ -52,6 +54,10 @@ h3 {
   &--row {
     align-items: center;
     width: 100vw;
+  }
+
+  &--first {
+    min-height: 85vh;
   }
 
   &__columns {

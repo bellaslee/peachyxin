@@ -20,6 +20,7 @@ a:hover {
 
 h1 {
   font-weight: 900;
+  font-size: 36px;
 }
 h1:hover {
   color: var(--random-color);
@@ -45,6 +46,9 @@ h3 {
 .section--row {
   align-items: center;
   width: 100vw;
+}
+.section--first {
+  min-height: 85vh;
 }
 .section__columns {
   display: flex;

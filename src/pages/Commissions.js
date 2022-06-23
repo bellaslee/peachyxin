@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const commissionStatus = true;
 const nextSlot = 'July';
 
 const Commissions = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <React.Fragment>
-      <section className="section">
+      <section className="section section--first">
         <h2>commissions</h2>
         <p>
           ✧ Before you order, please make sure to have read my Terms of Service. These terms apply to private commissions only. This information is NOT applicable to commercial work; therefore, the art can only be used for the client’s personal purposes. Please contact me for commercial licensing information.
@@ -18,8 +22,7 @@ const Commissions = () => {
           ✧ Additional characters +75%
         </p>
         <p>
-          ✶ Will draw: original characters, fanart, real people, blood/mild gore
-
+          ✶ Will draw: original characters, fanart, real people, blood/mild gore<br />
           ✶ Won't draw: explicit content, anthropomorphic characters, designs I feel that I cannot portray well
         </p>
         <p>
@@ -41,7 +44,7 @@ const Commissions = () => {
               <li>Bust: $50</li>
               <li>Fullbody: $100</li>
             </ul>
-            <button className='button button--pink'>View more examples</button>
+            {/* <button className='button button--pink'>View more examples</button> */}
           </div>
 
           <div className="section__column">
@@ -55,7 +58,7 @@ const Commissions = () => {
               <li>Bust: $100</li>
               <li>Fullbody: $250</li>
             </ul>
-            <button className='button button--pink'>View more examples</button>
+            {/* <button className='button button--pink'>View more examples</button> */}
           </div>
 
           <div className="section__column">
