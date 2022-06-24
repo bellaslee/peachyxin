@@ -87,18 +87,17 @@ const Commissions = () => {
         </p>
         <p>
           In your message, please include the following details:
-
-          <ol>
-            <li>Number of characters.</li>
-            <li>Style and headshot / bust / full-body.</li>
-            <li>Background type.</li>
-            <li>Character reference image and/or character sheet.</li>
-            <li>Description of character's personality or link to their wiki page.</li>
-            <li>Any other specific details to be included in the image (e.g. pose, special accessories, etc.)</li>
-            <li>It would be helpful if you could show me your favorite pieces of mine so I can try to emulate the style and overall vibe!</li>
-            <li>Paypal email address for invoicing.</li>
-          </ol>
         </p>
+        <ol>
+          <li>Number of characters.</li>
+          <li>Style and headshot / bust / full-body.</li>
+          <li>Background type.</li>
+          <li>Character reference image and/or character sheet.</li>
+          <li>Description of character's personality or link to their wiki page.</li>
+          <li>Any other specific details to be included in the image (e.g. pose, special accessories, etc.)</li>
+          <li>It would be helpful if you could show me your favorite pieces of mine so I can try to emulate the style and overall vibe!</li>
+          <li>Paypal email address for invoicing.</li>
+        </ol>
       </section>
     </React.Fragment>
   )

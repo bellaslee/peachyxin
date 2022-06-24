@@ -136,7 +136,7 @@ const PortfolioGallery = () => {
   };
 
   // The eventsListener will notify you anytime something has happened in the gallery.
-  const eventsListener = (eventName, eventData) => console.log({ eventName, eventData });
+  // const eventsListener = (eventName, eventData) => console.log({ eventName, eventData });
 
   // The scrollingElement is usually the window, if you are scrolling inside another element, suplly it here
   const scrollingElement = window;
@@ -146,7 +146,7 @@ const PortfolioGallery = () => {
       items={items}
       options={options}
       container={container}
-      eventsListener={eventsListener}
+      // eventsListener={eventsListener}
       scrollingElement={scrollingElement}
     />
   );
