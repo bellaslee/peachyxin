@@ -1,20 +1,16 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const commissionStatus = true;
 const nextSlot = 'July';
 
-const Commissions = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+function Commissions() {
   return (
-    <React.Fragment>
+    <>
       <section className="section section--first">
         <h2>commissions</h2>
         <p>
-          ✧ Before you order, please make sure to have read my <Link to="../tos"><em className="bold">Terms of Service</em></Link>. These terms apply to private commissions only. This information is NOT applicable to commercial work; therefore, the art can only be used for the client’s personal purposes. Please contact me for commercial licensing information.
+          ✧ Before you order, please make sure to have read my <Link href="../tos"><a><em className="bold">Terms of Service</em></a></Link>. These terms apply to private commissions only. This information is NOT applicable to commercial work; therefore, the art can only be used for the client’s personal purposes. Please contact me for commercial licensing information.
         </p>
         <p>
           ✧ All prices below are base prices. Things that might increase the price include complex character designs, the number of characters, not being able to provide a good visual reference, complex backgrounds, and the amount of detail in the image in general.
@@ -99,7 +95,7 @@ const Commissions = () => {
           <li>Paypal email address for invoicing.</li>
         </ol>
       </section>
-    </React.Fragment>
+    </>
   )
 };
 

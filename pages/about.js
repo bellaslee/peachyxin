@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 
-const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+function About() {
   return (
     <React.Fragment>
       <section className="section section--first">

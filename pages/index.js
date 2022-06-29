@@ -1,11 +1,7 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
-const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+function Home() {
   return (
     <React.Fragment>
       <section className='section section--row section--first'>
@@ -13,7 +9,7 @@ const Home = () => {
           <div className='section__column section__column--center-items'>
             <h2>commissions</h2>
             <p>order custom art by me</p>
-            <Link to="/commissions"> <button className='button button--pink'>Go to page</button></Link>
+            <Link href="/commissions"><a><button className='button button--pink'>Go to page</button></a></Link>
           </div>
           <div className='section__column section__column--center-items'>
             <h2>prints</h2>

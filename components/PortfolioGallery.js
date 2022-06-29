@@ -3,7 +3,7 @@ import React from 'react';
 import { ProGallery } from 'pro-gallery';
 import 'pro-gallery/dist/statics/main.css';
 
-const PortfolioGallery = () => {
+function PortfolioGallery() {
   const items = [
     {
       itemId: 'yuta',

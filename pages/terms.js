@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Terms = () => {
+function Terms() {
   return (
     <React.Fragment>
       <section className="section section--first">

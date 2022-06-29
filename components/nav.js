@@ -1,8 +1,7 @@
-import '../assets/css/nav.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const links = [
   {
@@ -31,7 +30,7 @@ const links = [
   }
 ];
 
-const Nav = () => {
+function Nav() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   useEffect(() => {
@@ -40,7 +39,7 @@ const Nav = () => {
   }, [isNavExpanded])
 
   const renderLinks = links.map((link) => {
-    const content = link.url ? <a href={link.url} target="_blank" rel="noreferrer">{link.page}</a> : <Link to={link.route}>{link.page}</Link>;
+    const content = link.url ? <a href={link.url} target="_blank" rel="noreferrer">{link.page}</a> : <Link href={link.route}><a>{link.page}</a></Link>;
 
     return (
       <li
@@ -68,7 +67,7 @@ const Nav = () => {
       <h1 onMouseOver={(e) => {
         setRandomColor(e.currentTarget);
       }}>
-        <Link to="/">peachyxin</Link>
+        <Link href="/"><a>peachyxin</a></Link>
       </h1>
       <button
         onClick={() => {
