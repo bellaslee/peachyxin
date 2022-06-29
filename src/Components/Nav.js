@@ -63,10 +63,6 @@ const Nav = () => {
     document.body.style.setProperty('--random-color', colors[color]);
   };
 
-  const bloom = () => {
-
-  };
-
   return (
     <nav className="nav">
       <h1 onMouseOver={(e) => {
