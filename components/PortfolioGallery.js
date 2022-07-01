@@ -1,9 +1,20 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { ProGallery } from 'pro-gallery';
 import 'pro-gallery/dist/statics/main.css';
 
 function PortfolioGallery() {
+
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
+  const [browserWindow, setBrowserWindow] = useState();
+
+  useEffect(() => {
+    setWidth(window.innerWidth * 0.9);
+    setHeight(window.innerHeight);
+    setBrowserWindow(window);
+  }, []);
+
   const items = [
     {
       itemId: 'yuta',
@@ -131,15 +142,15 @@ function PortfolioGallery() {
 
   // The size of the gallery container. The images will fit themselves in it
   const container = {
-    width: window.innerWidth,
-    height: window.innerHeight * 0.87
+    width: width,
+    height: height * 0.87
   };
 
   // The eventsListener will notify you anytime something has happened in the gallery.
   // const eventsListener = (eventName, eventData) => console.log({ eventName, eventData });
 
   // The scrollingElement is usually the window, if you are scrolling inside another element, suplly it here
-  const scrollingElement = window;
+  const scrollingElement = browserWindow;
 
   return (
     <ProGallery
