@@ -19,8 +19,8 @@ function Commissions() {
           ✧ Additional characters +75%
         </p>
         <p>
-          ✶ Will draw: original characters, fanart, real people, blood/mild gore<br />
-          ✶ Won't draw: explicit content, anthropomorphic characters, designs I feel that I cannot portray well
+          ✶ Will draw: original characters, fanart, blood/mild gore<br />
+          ✶ Won't draw: real people, explicit content, anthropomorphic characters, designs I feel that I cannot portray well
         </p>
         <p>
           ✧ All prices are in USD, payment through Paypal only
