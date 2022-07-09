@@ -54,6 +54,7 @@ function Commissions() {
             <ul>
               <li>Headshot: $50</li>
               <li>Bust: $100</li>
+              <li>Fullbody: $250</li>
             </ul>
             {/* <button className='button button--pink'>View more examples</button> */}
           </div>
