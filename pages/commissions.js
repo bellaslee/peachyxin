@@ -10,17 +10,17 @@ function Commissions() {
       <section className="section section--first">
         <h2>commissions</h2>
         <p>
-          ✧ Before you order, please make sure to have read my <Link href="../tos"><a><em className="bold">Terms of Service</em></a></Link>. These terms apply to private commissions only. This information is NOT applicable to commercial work; therefore, the art can only be used for the client’s personal purposes. Please contact me for commercial licensing information.
+          ✧ Before you order, please make sure to have read my <Link href="../terms"><a><em className="bold underline">Terms of Service</em></a></Link>. These terms apply to private commissions only. This information is NOT applicable to commercial work; therefore, the art can only be used for the client’s personal purposes. Please contact me for commercial licensing information.
         </p>
         <p>
           ✧ All prices below are base prices. Things that might increase the price include complex character designs, the number of characters, not being able to provide a good visual reference, complex backgrounds, and the amount of detail in the image in general.
         </p>
         <p>
-          ✧ Additional characters +75%
+          ✧ Additional characters +100%
         </p>
         <p>
           ✶ Will draw: original characters, fanart, blood/mild gore<br />
-          ✶ Won't draw: real people, explicit content, anthropomorphic characters, designs I feel that I cannot portray well
+          ✶ Won't draw: real people, explicit content, anthropomorphic characters, designs that I cannot portray well
         </p>
         <p>
           ✧ All prices are in USD, payment through Paypal only
@@ -32,35 +32,35 @@ function Commissions() {
         <div className="section__columns">
           <div className="section__column">
             <div className="section__column__thumbnail">
-              <img src='./img/killerqueen.jpg' alt="Yoshikage Kira" />
+              <img src='../img/killerqueen.jpg' alt="Yoshikage Kira" />
             </div>
-            <h3>Style A</h3>
-            <p>A loose style with limited color palettes.</p>
+            <h3>Sketch</h3>
+            <p>Loose with rough brush strokes.</p>
             <ul>
               <li>Headshot: $30</li>
               <li>Bust: $50</li>
               <li>Fullbody: $100</li>
             </ul>
+            <p><em className="underline">Note</em>: you can request that I fully render certain parts (e.g. face or hands only) for an additional fee.</p>
             {/* <button className='button button--pink'>View more examples</button> */}
           </div>
 
           <div className="section__column">
             <div className="section__column__thumbnail">
-              <img src='./img/yuta.jpg' alt="Okkotsu Yuta" />
+              <img src='../img/yuta.jpg' alt="Okkotsu Yuta" />
             </div>
-            <h3>Style B</h3>
-            <p>A fully-rendered semi-realistic style.</p>
+            <h3>Full render</h3>
+            <p>Fully-rendered completed piece.</p>
             <ul>
               <li>Headshot: $50</li>
               <li>Bust: $100</li>
-              <li>Fullbody: $250</li>
             </ul>
             {/* <button className='button button--pink'>View more examples</button> */}
           </div>
 
           <div className="section__column">
             <div className="section__column__thumbnail">
-              <img src='./img/4taro.jpg' alt="Marine Jotaro" />
+              <img src='../img/4taro.jpg' alt="Marine Jotaro" />
             </div>
             <h3>Background</h3>
             <p>Pricing varies.</p>
@@ -85,14 +85,12 @@ function Commissions() {
           In your message, please include the following details:
         </p>
         <ol>
-          <li>Number of characters.</li>
-          <li>Style and headshot / bust / full-body.</li>
-          <li>Background type.</li>
-          <li>Character reference image and/or character sheet.</li>
-          <li>Description of character's personality or link to their wiki page.</li>
-          <li>Any other specific details to be included in the image (e.g. pose, special accessories, etc.)</li>
-          <li>It would be helpful if you could show me your favorite pieces of mine so I can try to emulate the style and overall vibe!</li>
-          <li>Paypal email address for invoicing.</li>
+          <li>What kind of commission you are looking to get</li>
+          <li>Character reference image(s).</li>
+          <li>Reference image for pose, expression, and/or overall vibe</li>
+          <li>Brief description of character's personality or link to their wiki page.</li>
+          <li>Any other specific details to be included in the image</li>
+          <li>At least one previous work of mine as a style example.</li>
         </ol>
       </section>
     </>

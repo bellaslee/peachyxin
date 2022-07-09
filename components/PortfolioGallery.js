@@ -10,7 +10,7 @@ function PortfolioGallery() {
   const [browserWindow, setBrowserWindow] = useState();
 
   useEffect(() => {
-    setWidth(window.innerWidth * 0.9);
+    setWidth(window.innerWidth);
     setHeight(window.innerHeight);
     setBrowserWindow(window);
   }, []);
@@ -18,7 +18,7 @@ function PortfolioGallery() {
   const items = [
     {
       itemId: 'yuta',
-      mediaUrl: './img/yuta.jpg',
+      mediaUrl: '../img/yuta.jpg',
       metaData: {
         type: 'image',
         height: 2607,
@@ -30,7 +30,7 @@ function PortfolioGallery() {
     },
     {
       itemId: 'aki',
-      mediaUrl: './img/aki.jpg',
+      mediaUrl: '../img/aki.jpg',
       metaData: {
         type: 'image',
         height: 3543,
@@ -42,7 +42,7 @@ function PortfolioGallery() {
     },
     {
       itemId: '4taro',
-      mediaUrl: './img/4taro.jpg',
+      mediaUrl: '../img/4taro.jpg',
       metaData: {
         type: 'image',
         height: 3990,
@@ -54,7 +54,7 @@ function PortfolioGallery() {
     },
     {
       itemId: 'jojo',
-      mediaUrl: './img/jojo.jpg',
+      mediaUrl: '../img/jojo.jpg',
       metaData: {
         type: 'image',
         height: 2426,
@@ -66,7 +66,7 @@ function PortfolioGallery() {
     },
     {
       itemId: 'goldenwind',
-      mediaUrl: './img/goldenwind.jpg',
+      mediaUrl: '../img/goldenwind.jpg',
       metaData: {
         type: 'image',
         height: 2349,
@@ -78,7 +78,7 @@ function PortfolioGallery() {
     },
     {
       itemId: 'kira',
-      mediaUrl: './img/killerqueen.jpg',
+      mediaUrl: '../img/killerqueen.jpg',
       metaData: {
         type: 'image',
         height: 3285,
@@ -90,7 +90,7 @@ function PortfolioGallery() {
     },
     {
       itemId: 'risotto',
-      mediaUrl: './img/risotto.jpg',
+      mediaUrl: '../img/risotto.jpg',
       metaData: {
         type: 'image',
         height: 3543,
@@ -102,7 +102,7 @@ function PortfolioGallery() {
     },
     {
       itemId: 'abbacchio',
-      mediaUrl: './img/abbacchio.jpg',
+      mediaUrl: '../img/abbacchio.jpg',
       metaData: {
         type: 'image',
         height: 3134,

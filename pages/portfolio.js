@@ -3,9 +3,7 @@ import Gallery from '../Components/PortfolioGallery';
 
 function Portfolio() {
   return (
-    <React.Fragment>
-      <Gallery />
-    </React.Fragment>
+    <Gallery />
   )
 };
 

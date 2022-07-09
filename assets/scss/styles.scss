@@ -146,6 +146,15 @@ em {
   text-align: center;
   height: 5%;
   margin-top: $base-spacing * 3;
+
+  svg {
+    font-size: $base-spacing * 2;
+  }
+}
+
+.gallery-container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 768px) {
