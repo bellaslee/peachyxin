@@ -32,7 +32,7 @@ function Commissions() {
         <div className="section__columns">
           <div className="section__column">
             <div className="section__column__thumbnail">
-              <img src='../img/killerqueen.jpg' alt="Yoshikage Kira" />
+              <img src='../img/diluc.jpg' alt="Yoshikage Kira" />
             </div>
             <h3>Sketch</h3>
             <p>Loose with rough brush strokes.</p>
@@ -66,7 +66,7 @@ function Commissions() {
             <h3>Background</h3>
             <p>Pricing varies.</p>
             <ul>
-              <li>Graphic background: FREE
+              <li>Abstract background: FREE
                 <ul>
                   <li>Includes shapes, textures, etc.</li>
                 </ul>
