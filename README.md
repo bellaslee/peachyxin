@@ -1,2 +1,2 @@
 # peachyxin
-Illustration portfolio website. Under development. Created with React.
+Illustration portfolio website. Under development. Created with Next.js.
