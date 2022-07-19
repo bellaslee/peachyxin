@@ -34,8 +34,8 @@ function Commissions() {
             <div className="section__column__thumbnail">
               <img src='../img/diluc.jpg' alt="Yoshikage Kira" />
             </div>
-            <h3>Sketch</h3>
-            <p>Loose with rough brush strokes.</p>
+            <h3>Rough</h3>
+            <p>Loose with rough brush strokes. Generally less polished than a fully-rendered piece.</p>
             <ul>
               <li>Headshot: $30</li>
               <li>Bust: $50</li>
@@ -50,7 +50,7 @@ function Commissions() {
               <img src='../img/yuta.jpg' alt="Okkotsu Yuta" />
             </div>
             <h3>Full render</h3>
-            <p>Fully-rendered completed piece.</p>
+            <p>Fully-rendered piece.</p>
             <ul>
               <li>Headshot: $50</li>
               <li>Bust: $100</li>
@@ -91,7 +91,7 @@ function Commissions() {
           <li>Reference image for pose, expression, and/or overall vibe</li>
           <li>Brief description of character's personality or link to their wiki page.</li>
           <li>Any other specific details to be included in the image</li>
-          <li>At least one previous work of mine as a style example.</li>
+          <li>At least one previous work of mine as a style example, as my style tends to fluctuate as I experiment. Disclaimer: I can't guarantee that I will be able to completely replicate the style of older pieces.</li>
         </ol>
       </section>
     </>

@@ -29,6 +29,18 @@ function PortfolioGallery() {
       },
     },
     {
+      itemId: 'dottore',
+      mediaUrl: '../img/dottore.jpg',
+      metaData: {
+        type: 'image',
+        height: 3243,
+        width: 2093,
+        title: 'Il Dottore',
+        description: 'July 2022. Genshin Impact fanart.',
+        focalPoint: [0, 0],
+      },
+    },
+    {
       itemId: 'aki',
       mediaUrl: '../img/aki.jpg',
       metaData: {

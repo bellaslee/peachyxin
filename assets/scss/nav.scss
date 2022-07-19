@@ -9,6 +9,7 @@ $blue: #66b2de;
   position: relative;
   padding-left: $base-spacing;
   padding-right: $base-spacing;
+  z-index: 1000;
 
   h1 {
     margin-left: $base-spacing;
